@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dewu-client"
+version = "1.0.0"
+description = "得物海外开放平台 (POIZON) 价格/销量查询客户端"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31"]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29", "pydantic>=2.6"]
+
+[tool.setuptools]
+py-modules = ["dewu_client"]
